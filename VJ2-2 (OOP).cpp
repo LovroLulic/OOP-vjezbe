@@ -33,10 +33,10 @@ public:
         }
     }
 
-    // Kopirni operator pridruûivanja
+    // Kopirni operator pridru≈æivanja
     Pijesak& operator=(const Pijesak& A) {
         if (this != &A) {
-            delete[] zrno; // oËisti staru memoriju
+            delete[] zrno; // oƒçisti staru memoriju
 
             kolicina = A.kolicina;
             zrno = new Zrno[kolicina];
@@ -56,7 +56,7 @@ public:
         privremeni.kolicina = NULL;
     }
 
-    // Operator pridruûivanja (prijenos)
+    // Operator pridru≈æivanja (prijenos)
     Pijesak& operator=(Pijesak&& privremeni) {
         if (this != &privremeni) {
             delete[] zrno;
@@ -79,7 +79,7 @@ int main() {
     Pijesak kopija = igraliste;
     cout << "Kopija ima " << kopija.kolicina << " zrna pijeska.\n";
 
-    // Operator pridruûivanja 
+    // Operator pridru≈æivanja 
     Pijesak drugi(1);
     drugi = igraliste;
     cout << "Drugi ima " << drugi.kolicina << " zrna pijeska.\n";
@@ -88,7 +88,7 @@ int main() {
     Pijesak premjesteni = move(igraliste);
     cout << "Premjesteni ima " << premjesteni.kolicina << " zrna pijeska.\n";
 
-    // Operator pridruûivanja prijenos
+    // Operator pridru≈æivanja prijenos
     Pijesak treci(1);
     treci = move(kopija);
     cout << "Treci ima " << treci.kolicina << " zrna pijeska.\n";
