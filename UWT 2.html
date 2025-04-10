@@ -3,142 +3,176 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UWT 2 Priprema</title>
-    <link rel="icon" href="favicon.png" type="image/x-icon" />
+    <title>UWT2Labos</title>
+    <link rel="icon" type="slike/x.icon" href="slike/favicon.ico">
+    <style>
+        table{
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <center>
-        <h1> Lovro Lulić</h1>
-        <h2> 0246128491</h2>
-    </center>
+    <form>
+        <table border="1" cellpadding="20" width="70%">
+            <tr>
+                <td colspan="6">
+                    <b>Prijava na putovanje iz snova</b>
+                </td>
+            </tr>
 
-<form>
-    <table border="3"  cellspacing="1" align="center" width="550px" title ="2020" style="table-layout: fixed;">
-    <caption>Gradovi</caption>
-    <tr height ="40">
-        <td colspan="3"></td>
-        <td colspan="3"></td>
-        <td colspan="3"></td>
-        <td colspan="3"></td>
-        <td colspan="3"></td>
-    </tr>
-    <tr height ="20">
-        <td colspan="6"></td>
-        <td colspan="9"></td>
-    </tr>
-    <tr height ="20">
-        <td colspan="9"></td>
-        <td colspan ="6"></td>
-    </tr>
-    <tr height ="20">
-        <td colspan ="6" rowspan="2"></td>
-        <td colspan ="9"></td>
-    </tr>
-    <tr height ="20">
-        <td colspan ="9"></td>
-    </tr>
-    <tr height="20">
-        <td colspan="5" rowspan="3">
-            <label>
-            <input type="radio" name ="grad" value="Zagreb">
-            <img src ="zagreb.jpg" alt ="zagreb" width="70">
-        </label>
-        <label>
-            <input type="radio" name ="grad" value="Madrid">
-            <img src ="madrid.jpg" alt ="madrid" width="70">
-        </label>
-        <label>
-            <input type="radio" name ="grad" value="Rijeka">
-            <img src ="rijeka.jpg" alt ="rijeka" width="70">
-        </label>
-        </td>
-        <td colspan ="5"></td>
-        <td colspan="5" rowspan="3">
-            <label>
-                <input type="checkbox" name="sadržaj" value="Kino" />Kino </label>
-            <br />
-            <label>
-                <input type="checkbox" name="sadržaj" value="Kazalište" />Kazalište </label>
-            <br />
-            <label>
-                <input type="checkbox" name="sadržaj" value="Klub" />Klub </label>
-                <br />
-            <label>
-                <input type="checkbox" name="sadržaj" value="Kuglana" />Kuglana </label>
-        </td>
-    </tr>
-    <tr height="20">
-        <td colspan="5">
-            <select name="ulica">
-                <option value="Ilica">Ilica</option>
-                <option value="Tkalčićeva">Tkalčićeva</option>
-                <option value="Gundulićeva">Gundulićeva</option>
-                <option value="Mališorna" selected>Mališorna</option>
-                <option value="Supetarska">Supetarska</option>
-            </select>
-        </td>
-    </tr>
-    <tr height="20">
-        <td colspan="5"></td>
-    </tr>
-    <tr height ="20">
-        <td colspan ="6">
-            <label>
-                Email: <input type="email" name="email" id="email" required />
-              </label>
-        </td>
-        <td colspan ="3">
-            <label> URL: <input type="url" name="url" id="url"/> </label>
-        </td>
-        <td colspan ="6">
-            <label>
-                Lozinka:
-                <input type="password" name="password" id="password" required />
-              </label>
-        </td>
-     </tr>
-     <tr height ="40">
-        <td colspan ="3">
-            <label>
-                Kalendar:
-                <input type="date" />
-              </label>
-        </td>
-        <td colspan ="3" rowspan ="4">
-            <label>
-                Unos velikog broja znakova:
-                <textarea name="textArea" cols="10" rows="5"></textarea>
-              </label>
-        </td>
-        <td colspan="1"></td>
-        <td colspan="1"></td>
-        <td colspan="1"></td>
-        <td colspan ="3" rowspan ="4"></td>
-        <td colspan ="3"></td>
-     </tr>
-     <tr height ="20">
-        <td colspan = "3"></td>
-        <td colspan = "3" rowspan="3"></td>
-        <td colspan = "3"></td>
-    <tr height="20">
-            <td colspan="3"></td>
-            <td colspan="3"></td>
-     </tr>
-    <tr height="20">
-            <td colspan="3"></td>
-            <td colspan="3"></td>
-     </tr>
-    <tr height="20">
-            <td colspan="5">
-                <input type="reset" value="Ispočetka" />
-            </td>
-            <td colspan="5"></td>
-            <td colspan="5">
-                <input type="submit" value="Spremi" />
-            </td>
-        </tr>
-</table>
-</form>
+            <tr align="left">
+                <td colspan="3">
+                    <label for="lozinka1">Lozinka:</label>
+                    <input type="password" name="lozinka1" placeholder="Lozinka">
+                </td>
+                <td colspan="3">
+                    <label for="lozinka2">Ponovite lozinku:</label>
+                    <input type="password" name="lozinka2" placeholder="Ponovite lozinku">
+                </td>
+            </tr>
+            <tr align="left">
+                <td colspan="2">
+                    <label for="ime_prezime">Ime i Prezime:</label><br>
+                    <input type="text" name="ime_prezime" placeholder="Ime i Prezime">
+                </td>
+                <td colspan="1">
+                    <label for="Godine">Broj godina:</label>
+                    <input type="range" name="Godine" min="0" max="100">
+                </td>
+                <td colspan="3">
+                    <label for="Broj_mobitela">Broj mobitela:</label>
+                    <input type="tel" name="Broj_mobitela" placeholder="123-45-678">
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="4" align="center">Broj posjecenih drzava do sada:</td>
+                <td colspan="2">
+                    <select name="Posjecene drzave">
+                        <option value="o1">Manje od 5 drzava</option>
+                        <option value="o2">Vise od 5 drzava</option>
+                        <option value="o3">Vise od 10 drzava</option>
+                        <option value="o4" selected>Vise od 20 drzava</option>
+                        <option value="o5">Vise od 50 drzava</option>
+                    </select>
+                </td>
+            </tr>
+            
+            <tr>
+                <td colspan="4" rowspan="2" align="left">
+                    <label for="stranijezik">Govorim ove strane jezike:</label><br>
+                    <label><input type="checkbox" name="stranijezik" value="Eng">Engleski<br></label>
+                    <label><input type="checkbox" name="stranijezik" value="Tal">Talijanski<br></label>
+                    <label><input type="checkbox" name="stranijezik" value="Esp">Spanjolski<br></label>
+                </td>
+                <td colspan="2" rowspan="2" align="right">
+                    <label>
+                        Napomena:
+                        <textarea name="textArea"></textarea>
+                    </label>
+
+                </td>
+            
+            </tr>
+
+            <tr>
+                
+            </tr>
+
+            <tr>
+                <td colspan="2" rowspan="5" align="right">
+                    Odaberite jednu drzavu po kontinentu u koju zelite otputovati:
+                </td>
+                <td colspan="1"><b>Europa</b></td>
+                <td colspan="1"><b>Azija</b></td>
+                <td colspan="1"><b>Afrika</b></td>
+                <td colspan="1"><b>Amerike</b></td>
+            </tr>
+
+            <tr>
+                <td colspan="1" rowspan="2">
+                    <label>
+                        <input type="radio" name="EUROPA" value="SV">Svicarska<br>
+                        <br>
+                        <img src="slike/svicarska.jpg" width="100" height="50">
+                    </label>
+                </td>
+                <td colspan="1" rowspan="2">
+                    <label>
+                        <input type="radio" name="AZIJA" value="TH">Thailand<br>
+                        <br>
+                        <img src="slike/Thailand.jpg" width="100" height="50">
+                    </label>
+                </td>
+                <td colspan="1" rowspan="2">
+                    <label>
+                        <input type="radio" name="AFRIKA" value="MK">Maroko<br>
+                        <br>
+                        <img src="slike/maroko.jpg" width="100" height="50">
+                    </label>
+                </td>
+                <td colspan="1" rowspan="2"><label>
+                    <input type="radio" name="AMERIKE" value="USA">SAD<br>
+                    <br>
+                    <img src="slike/sad.jpg" width="100" height="50">
+                </label></td>
+                
+            </tr>
+        
+            <tr>
+
+            </tr>
+
+            <tr>
+                <td colspan="1" rowspan="2">
+                    <label>
+                        <input type="radio" name="EUROPA" value="ESP">Spanjolska<br>
+                        <br>
+                        <img src="slike/spain.jpg" width="100" height="50">
+                    </label>
+                </td>
+                <td colspan="1" rowspan="2">
+                    <label>
+                        <input type="radio" name="AZIJA" value="CH">Kina<br>
+                        <br>
+                        <img src="slike/kina.jpg" width="100" height="50">
+                    </label>
+                </td>
+                <td colspan="1" rowspan="2">
+                    <label>
+                        <input type="radio" name="AFRIKA" value="MB">Mozambik<br>
+                        <br>
+                        <img src="slike/mozambik.jpg" width="100" height="50">
+                    </label>
+                </td>
+                <td colspan="1" rowspan="2">
+                    <label>
+                        <input type="radio" name="AMERIKE" value="MX">Meksiko<br>
+                        <br>
+                        <img src="slike/mex.jpg" width="100" height="50">
+                    </label>
+                </td>
+            </tr>
+
+            <tr>
+
+            </tr>
+
+            <tr>
+                <td colspan="4">
+                    <input type="reset" value="Ponisti">
+                </td>
+                <td colspan="1"></td>
+                <td colspan="1">
+                    <input type="submit" value="Posalji">
+                </td>
+            </tr>
+        
+        
+        </table>
+    </form>
     
 </body>
 </html>
