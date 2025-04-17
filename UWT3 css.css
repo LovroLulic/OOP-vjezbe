@@ -1,0 +1,281 @@
+#header{
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: #D95954;
+}
+
+#header, .titles {
+    text-align: right;
+}
+
+body{
+    background-image: url(images/pattern.png);
+    background-image: fixed;
+}
+
+.sidebar{
+    background-color: white;
+    border: solid #D95954;
+    padding: 20px;
+    border-radius: 25px;
+    width: 50%;
+   
+}
+
+h1.title{
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    font-weight: lighter;
+    letter-spacing: 5pt;
+}
+
+h1.title span{
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2pt;
+}
+
+.portrait{
+    background-image: url(images/portrait.jpg);
+    background-size:230px;
+    border: solid #D95954;
+    width:200px;
+    height: 200px;
+    padding: 20px;
+    border-radius: 25px;
+
+}
+
+h2.title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: lighter;
+    color: #D95954;
+}
+
+h2.title span{
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #D95954;
+}
+
+h3{
+    font-weight: lighter;
+    text-transform: uppercase;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+
+
+tr{
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+}
+
+td.title{
+    color: #D95954;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#sidebar-links{
+    padding: 20px;
+    text-align: center;
+}
+
+#birth a, #work a{
+    color: black;
+    text-decoration: none;
+}
+
+
+
+
+#youth h4{
+    font-weight: bold;
+}
+
+#birth h4, #work h4{
+    color:black
+}
+
+#youth{
+    background-color: white;
+}
+
+
+
+/* Bez podcrtavanja linkova u drugom <p> elementu */
+#youth p:nth-of-type(2) a {
+    text-decoration: none;
+    color:black
+}
+
+#death h4{
+    color: white;
+    font-style: oblique;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#work li{
+    color:#D95954;
+}
+
+a.link{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+#youth a{
+    color: black;
+}
+
+#youth a:first-of-type{
+    color: #D95954;
+    text-decoration: none;
+}
+
+#youth a:nth-of-type(2){
+    color: #D95954;
+}
+
+#youth a:nth-of-type(3){
+    color: #D95954;
+    text-decoration: line-through;
+}
+
+
+
+#button-patents{
+    background-color: #D95954;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 20px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+#button-images{
+    background-image: linear-gradient(to left, white ,#D95954);
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: solid #D95954;
+    text-decoration: none;
+}
+
+#biography{
+    padding: 20px;
+    margin: 20px;
+    width: 40%;
+}
+
+h4.title{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight: lighter;
+    color: #D95954;
+}
+
+p{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+#youth{
+    border: solid #D95954;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+ul{
+    list-style-image: url(images/light.png);
+    font-family: Arial, Helvetica, sans-serif;
+}
+li{
+    padding: 5px;
+}
+
+#death{
+    border: solid #D95954;
+    padding: 20px;
+    background-color: #D95954;
+    text-align: center;
+    color: white;
+}
+
+.footer{
+    background-color:#D95954;
+    padding: 30px;
+}
+
+
+.footer ul.sources{
+    list-style: none;
+}
+
+
+.footer li{
+    text-align: left;
+    background-color: white;
+    background-size:cover;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 20px;
+    width: 100px;
+    text-align: center;
+}
+
+.footer a{
+    color:#D95954;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.copy{
+    text-align: right;
+    color:white;
+}
+
+.copy span{
+    font-weight: bold;
+    font-style: italic;
+    display: block;
+}
+
+.footer h4{
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    color:white;
+}
+
+#sidebar-table table {
+    border-collapse: collapse;
+}
+#sidebar-table td {
+    padding: 10px;
+    border-bottom: 2px solid #D95954;
+}
+#sidebar-table tr:first-child td {
+    border-top: 2px solid #D95954;
+}
+#sidebar-table .title {
+    font-weight: bold;  
+}
+
+
+blockquote {
+    color: #D95954;              
+    font-style: italic;        
+    text-align: left;          
+    margin: 20px;              
+    background-image: url(images/quote.png);
+    background-repeat: no-repeat;
+    background-position: right ;
+    padding-right: 100px;
+    background-size: 70px
+}
