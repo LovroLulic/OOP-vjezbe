@@ -134,7 +134,7 @@ using namespace std;
 //	for (int i = 0; i < OOP.bodovi.size(); i++) {
 //		cout << OOP.bodovi[i] << endl;
 //	}
-//	/* Ispišite bodove svih studenata na ‘OOP’ kolegiju sortirane po broju bodova Npr.;
+//	/* IspiÅ¡ite bodove svih studenata na â€˜OOPâ€™ kolegiju sortirane po broju bodova Npr.;
 //	   Ivica Ivanovic  0246005654      20
 //	   Ivana Ivic      0246002475      25
 //	   Marko Markic    0246004234      32 */
