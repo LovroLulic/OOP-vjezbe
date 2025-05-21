@@ -2,6 +2,7 @@
 #include<string>
 #include<vector>
 #include<algorithm>
+#include<stdexcept>
 using namespace std;
 
 class Zaposlenik {
@@ -27,7 +28,9 @@ private:
 	double bonus;
 	int pocetna = 1000;
 public:
-	Menadzer(string i,string id,double b):Zaposlenik(i,id), bonus(b){}
+	Menadzer(string i,string id,double b):Zaposlenik(i,id), bonus(b){
+		if (bonus < 0) throw invalid_argument( "Bonus ne moze bit negaitvan.");
+	}
 
 	double izracunajPlacu() const override {
 		return pocetna + bonus;
@@ -47,7 +50,10 @@ private:
 	double satnica;
 public:
 
-	Programer(string i, string id, int brs, double st):Zaposlenik(i,id),brSati(brs),satnica(st){}
+	Programer(string i, string id, int brs, double st):Zaposlenik(i,id),brSati(brs),satnica(st){
+		if (brSati < 0) throw invalid_argument("Broj sati ne moze bit negativan.");
+		if (satnica < 0) throw invalid_argument("Satnica ne moze bit negagtivna.");
+	}
 	double izracunajPlacu() const override {
 		return brSati * satnica;
 	}
@@ -134,25 +140,30 @@ int main() {
 			cout << "ID: ";
 			getline(cin, id);
 		}
+		try {
+			if (izbor == 1) {
+				double bonus;
+				cout << "Unesi bonus: ";
+				cin >> bonus;
+				zaposlenici.push_back(new Menadzer(ime, id, bonus));
+			}
 
-		if (izbor == 1) {
-			double bonus;
-			cout << "Unesi bonus: ";
-			cin >> bonus;
-			zaposlenici.push_back(new Menadzer(ime, id, bonus));
+			else if (izbor == 2) {
+				int brSati;
+				double satnica;
+				cout << "Unesi broj sati: ";
+				cin >> brSati;
+				cout << "Unesi satnicu: ";
+				cin >> satnica;
+				zaposlenici.push_back(new Programer(ime, id, brSati, satnica));
+			}
+			else if (izbor == 3) {
+				zaposlenici.push_back(new Praktikant(ime, id));
+			}
 		}
 
-		else if (izbor == 2) {
-			int brSati;
-			double satnica;
-			cout << "Unesi broj sati: ";
-			cin >> brSati;
-			cout << "Unesi satnicu: ";
-			cin >> satnica;
-			zaposlenici.push_back(new Programer(ime, id, brSati, satnica));
-		}
-		else if (izbor == 3) {
-			zaposlenici.push_back(new Praktikant(ime, id));
+		catch (const exception& e) {
+			cout << "Greska: " << e.what()<<endl;
 		}
 
 	} while (izbor != 0);
