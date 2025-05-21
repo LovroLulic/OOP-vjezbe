@@ -51,8 +51,7 @@ private:
 public:
 
 	Programer(string i, string id, int brs, double st):Zaposlenik(i,id),brSati(brs),satnica(st){
-		if (brSati < 0) throw invalid_argument("Broj sati ne moze bit negativan.");
-		if (satnica < 0) throw invalid_argument("Satnica ne moze bit negagtivna.");
+		if (brSati < 0 || satnica<0) throw invalid_argument("Broj sati/satnica ne mogu biti negativni brojevi.");
 	}
 	double izracunajPlacu() const override {
 		return brSati * satnica;
