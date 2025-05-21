@@ -117,6 +117,7 @@ void Analiza(vector<Zaposlenik*>zaposlenici, int* brMen, int* brProg, int* brPra
 	cout << "Broj Menadzera: " << *brMen << endl;
 	cout << "Broj Programera: " << *brProg << endl;
 	cout << "Broj Praktikanata: " << *brPrak << endl;
+	cout << "Broj Zaposlenika: " << *brZap << endl;  
 	cout << "Ukupni trosak na place: " << *ukPlace << endl;
 }
 
